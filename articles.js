@@ -153,9 +153,6 @@ const articles = [
       <h3>5. KPIs and Branding</h3>
       <p>Establish metrics and reporting to measure and broadcast the progress and success of the team's deliverables.</p>
 
-      <h2>Watch: Leadership Onboarding in Practice</h2>
-      <p><em>Video coming soon — paste your YouTube link and it will appear here.</em></p>
-
 `
   }
 ];
