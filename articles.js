@@ -3,6 +3,72 @@
 
 const articles = [
   {
+    id: 2,
+    title: "Stepping into a Leadership Role: The First 30-45 Days",
+    category: "Leadership & Team Building",
+    date: "September 30, 2024",
+    readTime: "6 min read",
+    excerpt: "The first 30-45 days in a new leadership role set the tone for everything that follows. Most leaders go too deep on tech or too deep on people — here is the checklist that actually works.",
+    body: `
+      <p>Whether it's your first time or with a new team, taking on a leadership role comes with excitement and nerves. You're eager to get started, but there's always some apprehension about the unknown. In today's fast-paced world, where there's little time to settle in, the first 30-45 days are crucial for setting the tone for your success as a leader.</p>
+
+      <p>In my experience, leaders often spend this initial onboarding phase in one of two extremes:</p>
+
+      <ul>
+        <li><strong>Focusing on technical knowledge:</strong> They dive deeply into learning every technical detail about the product, platform, or service their team supports.</li>
+        <li><strong>Focusing on people:</strong> They invest heavily in getting to know the individuals on their team, aiming to understand everyone on a personal level.</li>
+      </ul>
+
+      <p>While neither of these approaches is inherently wrong — both are important in the long run — it's essential to remember that the first priority of any leader should be to grasp the team's portfolio, structure, and operations. Once this foundation is established, you can then continue to build expertise in the technical aspects and invest time in understanding your team members.</p>
+
+      <h2>The Onboarding Checklist</h2>
+
+      <p>Below is a checklist developed through years of onboarding new teams. These steps have proven effective regardless of the domain or ecosystem.</p>
+
+      <h3>1. Organizational Overview</h3>
+      <ul>
+        <li><strong>The "Why":</strong> Understand the purpose and core mission of the organization.</li>
+        <li><strong>Values and Culture:</strong> Familiarize yourself with the organization's core values and cultural norms.</li>
+        <li><strong>Leadership Goals:</strong> Align with the leadership team on key objectives and desired outcomes.</li>
+      </ul>
+
+      <h3>2. Organizational Structure</h3>
+      <ul>
+        <li><strong>Org Chart:</strong> Review the organizational hierarchy and reporting structure.</li>
+        <li><strong>Budget:</strong> Gain an understanding of the budget allocation and historical annual burn rates.</li>
+      </ul>
+
+      <h3>3. Current State Analysis</h3>
+      <ul>
+        <li><strong>Vertical Ownership (Estate):</strong> Assess what the team currently owns and manages across different business verticals.</li>
+        <li><strong>RACI Chart:</strong> Review the Responsibilities, Accountabilities, Consulted, and Informed chart for clarity on roles within the organization and across verticals.</li>
+        <li><strong>Roadmaps:</strong> Understand the current roadmap, tech debt, and future backlog.</li>
+        <li><strong>Headcount Needs:</strong> Evaluate current headcounts and determine if there are gaps or overages.</li>
+        <li><strong>Talent Management (A/B/C Matrix):</strong> Analyze talent levels using an A/B/C categorization to understand the team's strengths and development areas.</li>
+      </ul>
+
+      <h3>4. Operations and Workflow</h3>
+      <ul>
+        <li><strong>Work Intake:</strong> Understand how new work is brought into the team.</li>
+        <li><strong>Capacity Planning:</strong> Review how capacity is planned and distributed across the team.</li>
+        <li><strong>Policies, Operations, and Procedures:</strong> Review current operational processes — what is working and what isn't.</li>
+        <li><strong>Risk Areas:</strong> Identify and document areas of potential risk.</li>
+      </ul>
+
+      <h3>5. KPIs and Branding</h3>
+      <p>Establish metrics and reporting to measure and broadcast the progress and success of the team's deliverables. This is often the most overlooked step — leaders who make their team's work visible earn trust and budget.</p>
+
+      <h2>The Bottom Line</h2>
+      <p>The first 30-45 days are not the time to prove yourself technically or to become everyone's best friend. They are the time to <strong>understand the landscape</strong> — so that every decision you make after is grounded in reality, not assumptions.</p>
+
+      <h2>Watch the Video</h2>
+      <p>Prefer to watch rather than read? Here is the full walkthrough on YouTube:</p>
+      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:24px 0;border:1px solid rgba(0,194,168,0.2);">
+        <iframe src="https://www.youtube.com/embed/mDEru6x6tkA?start=45" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="Stepping into a Leadership Role: The First 30-45 Days"></iframe>
+      </div>
+    `
+  },
+  {
     id: 1,
     title: "What Does It Mean to Own and Support a Product or Platform?",
     category: "IT Strategy & Transformation",
@@ -90,11 +156,6 @@ const articles = [
       <h2>Watch: Leadership Onboarding in Practice</h2>
       <p><em>Video coming soon — paste your YouTube link and it will appear here.</em></p>
 
-      <h2>Watch the Video</h2>
-      <p>Prefer to watch rather than read? Here is the full walkthrough on YouTube:</p>
-      <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin:24px 0;border:1px solid rgba(0,194,168,0.2);">
-        <iframe src="https://www.youtube.com/embed/mDEru6x6tkA?start=45" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allowfullscreen loading="lazy" title="What Does It Mean to Own and Support a Product or Platform?"></iframe>
-      </div>
 `
   }
 ];
