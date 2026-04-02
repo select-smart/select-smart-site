@@ -2097,7 +2097,7 @@ footer {
           <div class="contact-info-icon">✉</div>
           <div>
             <div class="contact-info-label">Email</div>
-            <div class="contact-info-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e382878e8a8da390868f868097ce908e829197cd808c8e">[email&#160;protected]</a></div>
+            <div class="contact-info-value"><a href="mailto:admin@select-smart.com" style="color:var(--teal); text-decoration:none;">admin@select-smart.com</a></div>
           </div>
         </div>
         <div class="contact-info-item">
@@ -2115,7 +2115,7 @@ footer {
     </div>
     <div class="contact-form fade-up-3">
       <div class="form-title">Let's Talk</div>
-      <form action="https://formspree.io/f/admin@select-smart.com" method="POST">
+      <form id="contact-form" action="https://formspree.io/f/mqeglrvd" method="POST">
         <div class="form-group">
           <label class="form-label">Your Name</label>
           <input type="text" name="name" class="form-input" placeholder="First and last name" required>
@@ -2146,8 +2146,38 @@ footer {
         </div>
         <input type="hidden" name="_replyto" value="admin@select-smart.com">
         <input type="hidden" name="_subject" value="New SelectSmart Inquiry">
-        <button type="submit" class="form-submit">Send Message</button>
+        <input type="hidden" name="_next" value="https://www.select-smart.com/#thank-you">
+        <button type="submit" class="form-submit" id="form-submit-btn">Send Message</button>
       </form>
+      <div id="form-success" style="display:none; padding:32px; text-align:center; border:1px solid rgba(0,194,168,0.3); background:rgba(0,194,168,0.05);">
+        <div style="font-size:32px; margin-bottom:16px;">✓</div>
+        <div style="font-family:var(--font-display); font-size:24px; color:var(--white); margin-bottom:8px;">Message Sent</div>
+        <p style="font-size:14px; color:var(--mid); font-family:var(--font-body);">Thanks for reaching out. You'll hear back within 24 hours on business days.</p>
+      </div>
+      <script>
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const btn = document.getElementById('form-submit-btn');
+          btn.textContent = 'Sending...';
+          btn.disabled = true;
+          const data = new FormData(this);
+          try {
+            const res = await fetch(this.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+            if (res.ok) {
+              this.style.display = 'none';
+              document.getElementById('form-success').style.display = 'block';
+            } else {
+              btn.textContent = 'Send Message';
+              btn.disabled = false;
+              alert('Something went wrong. Please email admin@select-smart.com directly.');
+            }
+          } catch {
+            btn.textContent = 'Send Message';
+            btn.disabled = false;
+            alert('Something went wrong. Please email admin@select-smart.com directly.');
+          }
+        });
+      </script>
     </div>
   </div>
   <footer>
