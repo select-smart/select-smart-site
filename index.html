@@ -2338,7 +2338,9 @@ img, svg, iframe, video, canvas {
         <input type="hidden" name="_replyto" value="admin@select-smart.com">
         <input type="hidden" name="_subject" value="New SelectSmart Inquiry">
         <input type="hidden" name="_next" value="https://www.select-smart.com/#thank-you">
-        <button type="submit" class="form-submit" id="form-submit-btn">Send Message</button>
+        <!-- Honeypot — bots fill this, Formspree rejects the submission -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+<button type="submit" class="form-submit" id="form-submit-btn">Send Message</button>
       </form>
       <div id="form-success" style="display:none; padding:32px; text-align:center; border:1px solid rgba(0,194,168,0.3); background:rgba(0,194,168,0.05);">
         <div style="font-size:32px; margin-bottom:16px;">✓</div>
@@ -2348,7 +2350,7 @@ img, svg, iframe, video, canvas {
       <script>
         document.getElementById('contact-form').addEventListener('submit', async function(e) {
           e.preventDefault();
-          const btn = document.getElementById('form-submit-btn');
+const btn = document.getElementById('form-submit-btn');
           btn.textContent = 'Sending...';
           btn.disabled = true;
           const data = new FormData(this);
