@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://select-smart.com/sitemap.xml
