@@ -17,8 +17,8 @@
  *   IT Strategy & Transformation | Cloud & Infrastructure
  *   Leadership & Team Building   | Cost Optimization
  *
- * Any entry with a `url` opens on Substack. An entry with a `body` instead
- * opens in the on-site reader. Both styles work side by side.
+ * Articles are NOT hosted on this site. Every entry needs a `url` —
+ * cards link straight out to Substack in a new tab.
  * ════════════════════════════════════════════════════ */
 
 const articles = [
